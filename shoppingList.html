@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="KKANGJIA"> 
+  <meta name="keywords" content="shopping List">
+  <meta name="description" content="shopping List">
+  <title>shopping List</title>
+  <link rel="icon" href="./favicon.png" type="image/x-icon" sizes="18x18">
+  <link rel="stylesheet" href="style.css">
+  <script src="./shoppingList.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="fixbar">
+      <h1 class="fixbar-date"></h1>
+      <label class="fixbar-spot" for="pet-select">장소를 선택하세요</label>
+      <select name="spots" id="spots-select">
+          <option value="">Please choose an option</option>
+          <option value="Homeplus">HOME PLUS</option>
+          <option value="E-mart">E-MART</option>
+          <option value="No-Brande">NO-BRANDE</option>
+          <option value="Lottemart">LOTTE MART</option>
+          <option value="Traditional-Market">재래 시장</option>
+      </select>
+    </header>
+    <section class="list">
+      <ul class="list-items"></ul>
+    </section>
+    
+    <footer class="footer">
+      <div class="addbox">
+        <input type="text"/>
+        <button class="addBtn">추가</button>
+      </div>
+      <p>'오늘은 장보기 좋은 날입니다'</p>
+    </footer>
+    <aside class="save">
+      <button id="submit" class="saveBtn">Save List</button>
+      <button id="submit" class="removeBtn">Clear List</button>
+    </aside>
+  </div>
+
+  <section class="savedlistItem">
+    <h1>Saved List</h1>
+  </section>
+  
+</body>
+</html>

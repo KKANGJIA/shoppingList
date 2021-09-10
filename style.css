@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+:root {
+  --background-color: #f4eeed;
+  --basic-width: 480px;
+  --basic-opacity: 0.97;
+  --basic-font-size: 1.1em;
+  --big-font-size: 1em;
+  --small-font-size: 0.8em;
+}
+
+body {
+  font-family: "Gowun Dodum", sans-serif;
+  background-image: url("https://i.pinimg.com/236x/2b/2b/bc/2b2bbcd4cf8f3febeec81ed551d96c70.jpg");
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 650px;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.fixbar {
+  width: var(--basic-width);
+  height: 100px;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  line-height: 50px;
+  text-align: center;
+  opacity: var(--basic-opacity);
+}
+
+.fixbar-date,
+.fixbar-spot {
+  margin: 0px;
+  font-size: var(--basic-font-size);
+}
+
+#spots-select {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #999b84;
+  margin: 0px 15px;
+  font-size: 0.8em;
+  background-color: transparent;
+  padding: 3px;
+}
+
+.list {
+  width: var(--basic-width);
+  height: 350px;
+  background-color: var(--background-color);
+  margin: auto;
+  line-height: 50px;
+  font-size: var(--basic-font-size);
+  opacity: var(--basic-opacity);
+  overflow: auto;
+  padding: 5px 0px;
+}
+
+.list ul {
+  height: 250px;
+  padding: 0px 0px;
+}
+
+.list li {
+  list-style: none;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.close-list {
+  display: inline;
+  margin: 0px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addbox {
+  width: 400px;
+  height: 50px;
+  background-color: #999b84;
+  margin: auto;
+  border-radius: 10px;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin: 0px 15px;
+  font-size: 1.2em;
+  background-color: transparent;
+  line-height: 150px;
+  padding: 5px;
+  color: beige;
+}
+
+input:focus {
+  outline: none;
+}
+
+.addBtn {
+  border: 0px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  width: var(--basic-width);
+  height: 90px;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  text-align: center;
+  line-height: 50px;
+  padding: 10px 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.save {
+  position: absolute;
+  top: 10px;
+}
+
+.saveBtn {
+  background-color: black;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 1.3em;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.removeBtn {
+  background-color: #fff;
+  color: black;
+  border-radius: 15px;
+  font-size: 1.3em;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.savedlistItem {
+  display: none;
+  width: var(--basic-width);
+  background-color: var(--background-color);
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.day {
+  display: inline-block;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 748px) {
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 550px;
+  }
+
+  .saveBtn,
+  .removeBtn {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  .fixbar-date,
+  .fixbar-spot {
+    margin: 0px;
+    font-size: var(--small-font-size);
+  }
+
+  .savedlistItem {
+    font-size: var(--small-font-size);
+  }
+
+  .day {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
