@@ -154,9 +154,9 @@ p {
 
 .savedlistItem {
   display: none;
-  width: var(--basic-width);
+  width: 480px;
   background-color: var(--background-color);
-  margin: 10px auto;
+  margin: 20px auto;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -198,5 +198,11 @@ p {
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .savedlistItem {
+    margin-left: 35px;
   }
 }
